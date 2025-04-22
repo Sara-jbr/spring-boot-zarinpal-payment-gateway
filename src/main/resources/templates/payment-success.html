@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>رسید پرداخت موفق</title>
+    <style>
+        body {
+            font-family: 'Tahoma', 'Vazir', sans-serif;
+            background-color: #f7f7f7;
+            direction: rtl;
+            padding: 30px;
+        }
+
+        .receipt {
+            background-color: #fff;
+            max-width: 500px;
+            margin: 0 auto;
+            border-radius: 12px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            padding: 30px;
+            text-align: center;
+        }
+
+        .receipt h2 {
+            color: #4CAF50;
+            font-size: 24px;
+        }
+
+        .receipt p {
+            font-size: 16px;
+            margin: 10px 0;
+            color: #333;
+        }
+
+        .thank-you {
+            margin-top: 25px;
+            font-weight: bold;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+<div class="receipt">
+    <h2>✅ پرداخت با موفقیت انجام شد!</h2>
+    <p>کد پیگیری: <strong th:text="${refId}"></strong></p>
+    <p>مبلغ پرداختی: <strong th:text="${amount}"></strong> تومان</p>
+    <p>ایمیل: <strong th:text="${email}"></strong></p>
+    <p class="thank-you">با تشکر از خرید شما ❤️</p>
+</div>
+
+</body>
+</html>

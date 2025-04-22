@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>پرداخت ناموفق</title>
+</head>
+<body style="font-family: Tahoma, sans-serif; direction: rtl; text-align: right;">
+<h2 style="color: red;">❌ پرداخت با مشکل مواجه شد</h2>
+<p>متأسفانه پرداخت شما ناموفق بود.</p>
+<p><strong>دلیل احتمالی:</strong> <span th:text="${reason}"></span></p>
+<p style="margin-top: 30px; color: gray;">در صورت نیاز لطفاً با پشتیبانی تماس بگیرید.</p>
+</body>
+</html>

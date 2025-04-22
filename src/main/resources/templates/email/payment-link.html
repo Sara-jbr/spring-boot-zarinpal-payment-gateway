@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>لینک پرداخت</title>
+</head>
+<body style="font-family: Tahoma, sans-serif; direction: rtl; text-align: right;">
+<h2>💳 درخواست پرداخت جدید</h2>
+<p>لطفاً با کلیک روی دکمه زیر پرداخت خود را انجام دهید:</p>
+<p style="text-align: center; margin-top: 20px;">
+    <a th:href="${paymentUrl}" style="background-color: #4CAF50; color: white; padding: 12px 25px; text-decoration: none; border-radius: 8px;">
+        پرداخت کن
+    </a>
+</p>
+<p style="margin-top: 30px; color: gray;">ممنون از اعتمادتون 💚</p>
+</body>
+</html>

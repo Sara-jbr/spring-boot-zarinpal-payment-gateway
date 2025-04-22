@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>پرداخت ناموفق</title>
+    <style>
+        body {
+            font-family: 'Tahoma', 'Vazir', sans-serif;
+            direction: rtl;
+            background-color: #fce4e4;
+            padding: 2rem;
+            color: #c62828;
+            text-align: center;
+        }
+
+        .box {
+            background-color: #fff;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #ccc;
+            max-width: 500px;
+            margin: auto;
+        }
+
+        h2 {
+            font-size: 22px;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            font-size: 16px;
+            margin: 0.5rem 0;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <h2>❌ پرداخت ناموفق بود</h2>
+    <p th:text="${message}">متأسفانه پرداخت شما تأیید نشد.</p>
+    <p>لطفاً مجدداً تلاش کنید یا با پشتیبانی تماس بگیرید.</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>رسید پرداخت موفق</title>
+</head>
+<body style="font-family: Tahoma, sans-serif; direction: rtl; text-align: right;">
+<h2 style="color: green;">✅ پرداخت با موفقیت انجام شد</h2>
+<p><strong>مبلغ:</strong> <span th:text="${amount}"></span> تومان</p>
+<p><strong>کد پیگیری:</strong> <span th:text="${refId}"></span></p>
+<p style="margin-top: 30px; color: gray;">با تشکر از خرید شما ❤️</p>
+</body>
+</html>

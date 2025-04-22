@@ -1,0 +1,38 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: sara-jabbari
+      changes:
+        - createTable:
+            tableName: transaction
+            columns:
+              - column:
+                  name: id
+                  type: BIGINT
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+              - column:
+                  name: authority
+                  type: VARCHAR(255)
+              - column:
+                  name: amount
+                  type: INT
+              - column:
+                  name: merchant_id
+                  type: VARCHAR(255)
+              - column:
+                  name: callback_url
+                  type: VARCHAR(512)
+              - column:
+                  name: status
+                  type: VARCHAR(100)
+              - column:
+                  name: description
+                  type: VARCHAR(1000)
+              - column:
+                  name: ref_id
+                  type: VARCHAR(255)
+              - column:
+                  name: email
+                  type: VARCHAR(255)
